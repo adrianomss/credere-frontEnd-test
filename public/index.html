@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Desafio Front End - Credere</title>
+    <meta charset="utf-8" />
+
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<!-- Inicio header simplest -->
+<header>
+    <div class="header">
+        <a href="#" class="logo">Desafio Front End - Credere</a>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#">Contatos</a>
+            <a href="#">Sobre</a>
+        </div>
+    </div>
+</header>
+
+<body class="bg">
+
+    <!-- Inicio do formulário -->
+
+    <div class="hr-span"><span> Segue abaixo o desafio resolvido porém ha algumas considerções , não sou dev sênior como
+            disse na primeira entrevista. Espero ter atendido pelo menos boa parte das expectativas. Estou aberto a
+            sujestão de aprendizado.</span></div>
+    <hr>
+    <div>
+        <section>
+            <form class="formulario" method="post">
+                <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+                <h2>Cliente</h2>
+                <div class="field">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                </div>
+                <!-- campo data nascimento-->
+                <div class="field">
+                    <label for="nascimento">Data Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" placeholder="Digite seu nascimento" required>
+                </div>
+                <!-- campo cnh -->
+                <div class="field">
+                    <label for="cnh">Carteira de Motorista</label>
+                    <input type="nunber" id="cnh" name="cnh" placeholder="Digite o numero da sua CNH" required>
+                </div>
+                <!-- campo estado -->
+                <div class="field">
+                    <label for="estado"> Naturalidade Estado </label>
+                    <select name="estado" required>
+                        <option value="ac"></option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="se">Sergipe</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+                <!-- campo cidade  -->
+                <div class="field">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite seu cidade*" required>
+                </div>
+                <!-- campo telefones -->
+                <div class="field" id="telefones">
+                    <div class="field">
+                        <label for="telefone">Telefones</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(ddd) número" required>
+                        <input type="radio" name="telradio" id="telradio">Principal</input>
+                    </div>
+                </div>
+                <button class="add" type="button" id="add-campo-telefone"> Adicionar + 1
+                </button>
+                <!-- campo emails  -->
+                <div class="field" id="emails">
+                    <div class="field">
+                        <label for="email">E-mails</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail *" required>
+                    </div>
+                </div>
+                <button class="add" type="button" id="add-campo-email"> Adicionar + 1 </button>
+                <!-- Campos dos responsáveis -->
+                <h2>Responsável</h2>
+                <div class="field">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                </div>
+                <div class="field">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(ddd) número" required>
+                </div>
+                <!-- Bônus de boa pratica de formulário buscar interassão e aturização para reaproveitar o contato -->
+                <div class="field radiobox">
+                    <span>Deseja receber nossas novidades?</span>
+                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                </div>
+                <button class="send" type="button" name="acao" value="salvar Cliente">Enviar</button>
+            </form>
+        </section>
+        <!-- FIM DO FORMULÁRIO -->
+        <div class="hr-span"><span> Layouts</span></div>
+        <hr>
+        <!-- Layout 1 -->
+        <div class="sec-layout">
+            <img id="img01" src="img/typeform-conversoes.jpeg" alt="">
+            <div class="sec-layout1">
+                <h1> Lorem, ipsum ? </h1>
+                <h2 id="h2-layout1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id non animi repudiandae
+                    iusto dolor?
+                    Consequuntur repellat nam vero
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui obcaecati ad voluptatum quam veniam
+                    alias unde dignissimos sint vero a nihil odio aspernatur sapiente similique eaque vitae, quaerat,
+                    sequi nemo!
+                </p>
+                <button class="btn-orange">Proximo</button>
+            </div>
+        </div>
+        <!-- Layout 2 -->
+        <div class="sec-layout2">
+            <span id="span-layout2">
+                Lorem, ipsum ?
+            </span>
+            <h2 id="h2-layout2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id non animi repudiandae
+                iusto dolor?
+                Consequuntur repellat nam vero
+            </h2>
+            <button class="btn-orange">Proximo</button>
+        </div>
+        <!-- ===================================:::::::::::::::::::::::::::::: -->
+        <div class="img-slider">
+            <div class="slide active">
+                <div class="info">
+                    <h2>Lorem ipsum ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        utlabore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="info">
+                    <h2>Slide 02</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        utlabore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="navegar">
+                <button class="btn active">Voltar</button>
+                <!--  <div class="btn"></div> -->
+                <button class="btn">Próximo</button>
+            </div>
+        </div>
+        <footer>
+            <div class="hr-span"><span> Todos direitos reservados</span></div>
+        </footer>
+        <!-- Fim dos layouts-->
+        <!-- Inicio doscript de adição de campo no formulário -->
+        <script>
+            //Por questão de praticidade foi utilizado algumas funções biblioteca jQuery
+            //https://api.jquery.com/click/
+
+            var cont = 1;//Variavel para contar registros de campos inseridos, deve previnir registros duplicados
+            $("#add-campo-telefone").click(function adicionaTelefone() {
+                cont++;//incremento
+
+                //Começa aqui o laço para limitar a quantidade de campos inseridos
+                if (cont <= 4) {
+                    //https://api.jquery.com/append/
+                    //Chamando função para duplicar campo de telefone
+                    $("#telefones").append('<div class="field" id="campo' + cont + '"><input type="tel" name="telefone" id="telefone" placeholder="(ddd) número" required><input type="radio" name="telradio" id="telradio"> Principal</input> <button type="button" id="' + cont + '" class="btn-excluir"> X </button> </div>');
+                }
+            });
+            //Remoção de campo de telefone
+            $('form').on('click', '.btn-excluir', function removeTelefone() {
+                var button_id = $(this).attr("id");
+                $('#campo' + button_id + '').remove();
+            });
+
+            //https://api.jquery.com/click/
+            var cont = 1;
+            $("#add-campo-email").click(function adicionaEmail() {
+                cont++;
+                //Começa aqui outro laço para limitar a quantidade de campos inseridos de email
+                if (cont <= 3) {
+                    //https://api.jquery.com/append/
+                    //Chamando função para duplicar campo de email
+                    $("#emails").append('<div class="field-novo" id="campo' + cont + '"><input type="email" id="email" name="email" placeholder="Digite seu melhor email*" required> <button type="button" id="' + cont + '" class="btn-excluir"> Excluir </button></div>');
+                }
+            });
+            //Assim como a inserção foi solicitado remoção de campo do formulário
+            $('form').on('click', '.btn-excluir', function removeEmail() {
+                var button_id = $(this).attr("id");
+                $('#campo' + button_id + '').remove();
+            });
+
+
+            //Aqui eu começo a usar Js puro para fazer interação com o slide 
+
+            var slides = document.querySelectorAll('.slide');//Declro a funcção Slide  e seto .slide
+            var btns = document.querySelectorAll('.btn');
+            let atualSlide = 1; //Verifico a posição do primeiro slide
+
+            //  Navegação manual-click
+            var manualNav = function (manual) {
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+
+                    btns.forEach((btn) => {
+                        btn.classList.remove('active');
+                    });
+                });
+
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+            }
+
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    atualSlide = i;
+                });
+            });
+
+            //  Autoplay do slide 
+            //Declaro uma função repetepassando parametro activeClass
+            var repete = function (activeClass) {
+                let active = document.getElementsByClassName('active');//Pego elemento pela clase active
+                let i = 1;
+
+                //Faço a repetição dos slides 
+                var repeticao = () => {
+                    setTimeout(function () {
+                        [...active].forEach((activeSlide) => {
+                            activeSlide.classList.remove('active');
+                        });
+
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+
+                        if (slides.length == i) {
+                            i = 0;
+                        }
+                        if (i >= slides.length) {
+                            return;
+                        }
+                        repeticao();
+                    }, 10000);
+                }
+                repeticao();
+            }
+            repete();
+
+
+        </script>
+        <!--Fim do script de adição de campo no formulário -->
+
+
+    </div>
+</body>
+
+</html>
