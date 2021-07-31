@@ -1,6 +1,6 @@
-<h1>Credere- Desafio Front-End - Adriano Morais Santos da Silva</h1>
+<h1>Desafio Front-End - Adriano Morais Santos da Silva</h1>
 
-Este é um desafio teste para colocaçção de de Dev.Front End.
+Este é um desafio teste para fins de aprendizado e demonstração de skills.
 
 ## 🚀 Começando
 
@@ -39,7 +39,7 @@ Como não há um aconvenção sobre estrutura de pastas para desenvolvimento web
 
 ```
 
-├── credere-FrontEnd-Test
+├── desafio-FrontEnd
 │   ├── admin
 │   │   └── Arquivos
 │   ├── public
